@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="block">
+        <label>Listado de Pokemon</label>
+        <div class="options">
+            <div class="search">
+                <input type="text" placeholder="Buscar" [(ngModel)]="pokemonFilter" name="customerFilter">
+                <i class="fa-solid fa-search input-icon"></i>
+            </div>
+            <button class="button" (click)="createPokemon()">
+                <i class="fa-solid fa-add"></i>Nuevo
+            </button>
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="boxConteiner">
+            <app-pokemon-list class="boxConteinersub"
+                [pokemons] = "pokemons"
+                [pokemonFilter] = "pokemonFilter"
+                (editPokemonEmit)='editPokemonEmit($event)'
+                (updatePokemonsEmit)='updatePokemonsEmit()'>
+            </app-pokemon-list>
+        </div>
+    </div>
+    
+    <div class="block">
+        <app-pokemon-add-edit
+            *ngIf = "viewPokemon"
+            [action] = "action"
+            [title] = "title"
+            [pokemon] = "pokemon"
+            (updatePokemonsEmit)='updatePokemonsEmit()'>
+        </app-pokemon-add-edit>
+    </div>
+</div>

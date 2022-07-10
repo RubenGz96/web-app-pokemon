@@ -1,0 +1,44 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td{
+    border:solid 1px grey ;
+    padding: 5px 0px 5px 15px;
+    width: 20%;
+}
+
+th{
+    padding: 10px 0px;
+    border:solid 1px grey ;
+}
+
+.img-pkm{
+    padding: 0px;
+    width: 33px;
+}
+
+.images{
+    text-align: center;
+    padding: 0px;
+}
+
+.buttons{
+    text-align: center;
+    padding: 0px;    
+}
+button{
+    border: 0;
+    font-size: 15px;
+    background-color: transparent;
+    color: rgb(114, 98, 254) ;
+}
+
+button:hover{
+    color: rgb(76, 63, 187) !important ;
+}
+
+button:active{
+    color: rgb(131, 117, 255) !important ;
+}
