@@ -45,14 +45,3 @@ button{
     padding: 8px 12px 8px 5px;
     color: rgb(255, 255, 255) ;
 }
-
-.boxConteiner{
-    width: 100%;
-    overflow: scroll;
-    line-height: 1;
-    height: 100%;
-}
-
-.boxConteinersub {
-    width: 98%;
-}

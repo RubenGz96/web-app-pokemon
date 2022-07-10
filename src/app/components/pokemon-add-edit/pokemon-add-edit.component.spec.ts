@@ -34,7 +34,8 @@ describe('PokemonAddEditComponent', () => {
     component.ngOnChanges();
     component.form.controls['name'].setValue('Pikachu');
     component.form.controls['image'].setValue('https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png');
-
+    component.form.controls['attack'].setValue(50);
+    component.form.controls['defense'].setValue(50);
     expect(component.form.valid).toBeTrue();
   });
 
@@ -56,6 +57,11 @@ describe('PokemonAddEditComponent', () => {
     expect(component.defense).toEqual(10);
   });
 
+  it('Debe salir de la funcion sin realizar ningun proceso, validate = 1, save()', () => {
+    component.validate = 1;
+    component.save();
+    expect(component.respServ).toBeUndefined();
+  })
 
   it('Debe crear pokemon, action = create, save()', () => {
     component.respServ = {id:0, name:'', image:'', attack:0, defense:0 };

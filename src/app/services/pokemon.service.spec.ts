@@ -24,7 +24,7 @@ describe('PokemonService', () => {
   });
 
 
-  it('Debe crearse el servicio', () => {
+  it('Debe crear el servicio', () => {
     expect(service).toBeTruthy();
   });
 

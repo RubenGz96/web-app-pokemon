@@ -30,7 +30,7 @@ describe('HomeComponent', () => {
     expect(component.pokemon).toEqual(pokemon);
   });
 
-  it('Debe cargar los datos del pokemon, editPokemonEmit(pokemon: Pokemon)', () => {
+  it('Debe cargar los datos del pokemon, editPokemonEmit(Pokemon)', () => {
     const pokemon = {id: 1, name:'Pikachu', image:'url', attack:50, defense:50 };
     component.editPokemonEmit(pokemon);
     expect(component.pokemon.name).toEqual('Pikachu');

@@ -30,7 +30,7 @@ describe('PokemonListComponent', () => {
   });
 
  
-  it('Debe eliminar pokemon, deletePokemon()', () => {
+  it('Debe eliminar pokemon, deletePokemon(number)', () => {
     const idPokemon:number = 1;
 
     const response: RespDeletePokemon = {
